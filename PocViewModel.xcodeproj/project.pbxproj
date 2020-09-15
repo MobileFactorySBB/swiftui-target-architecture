@@ -22,6 +22,8 @@
 		A7DC23B1250FB9C60012EA25 /* MyModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B0250FB9C60012EA25 /* MyModelTests.swift */; };
 		A7DC23B4250FBA440012EA25 /* MyFakeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B3250FBA440012EA25 /* MyFakeService.swift */; };
 		A7DC23B6250FC1070012EA25 /* MyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B5250FC1070012EA25 /* MyViewModel.swift */; };
+		A7DC23B8250FC4F40012EA25 /* MyViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B7250FC4F40012EA25 /* MyViewModelProtocol.swift */; };
+		A7DC23BB2510801D0012EA25 /* FakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BA2510801D0012EA25 /* FakeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		A7DC23B0250FB9C60012EA25 /* MyModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModelTests.swift; sourceTree = "<group>"; };
 		A7DC23B3250FBA440012EA25 /* MyFakeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFakeService.swift; sourceTree = "<group>"; };
 		A7DC23B5250FC1070012EA25 /* MyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewModel.swift; sourceTree = "<group>"; };
+		A7DC23B7250FC4F40012EA25 /* MyViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewModelProtocol.swift; sourceTree = "<group>"; };
+		A7DC23BA2510801D0012EA25 /* FakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 				A7DC23A3250FA74B0012EA25 /* ViewModels */,
 				A7DC23A4250FA7530012EA25 /* Models */,
 				A7DC23A5250FA75F0012EA25 /* Services */,
+				A7DC23B9251080070012EA25 /* Fakes */,
 				A7DC2378250FA7020012EA25 /* Assets.xcassets */,
 				A7DC237D250FA7020012EA25 /* LaunchScreen.storyboard */,
 				A7DC2380250FA7020012EA25 /* Info.plist */,
@@ -167,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				A7DC23B5250FC1070012EA25 /* MyViewModel.swift */,
+				A7DC23B7250FC4F40012EA25 /* MyViewModelProtocol.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -193,6 +199,14 @@
 			isa = PBXGroup;
 			children = (
 				A7DC23B3250FBA440012EA25 /* MyFakeService.swift */,
+			);
+			path = Fakes;
+			sourceTree = "<group>";
+		};
+		A7DC23B9251080070012EA25 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				A7DC23BA2510801D0012EA25 /* FakeViewModel.swift */,
 			);
 			path = Fakes;
 			sourceTree = "<group>";
@@ -329,7 +343,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7DC2373250FA7000012EA25 /* AppDelegate.swift in Sources */,
+				A7DC23BB2510801D0012EA25 /* FakeViewModel.swift in Sources */,
 				A7DC23AD250FB81E0012EA25 /* MyModel.swift in Sources */,
+				A7DC23B8250FC4F40012EA25 /* MyViewModelProtocol.swift in Sources */,
 				A7DC23A7250FA7CC0012EA25 /* MyService.swift in Sources */,
 				A7DC2375250FA7000012EA25 /* SceneDelegate.swift in Sources */,
 				A7DC2377250FA7000012EA25 /* ContentView.swift in Sources */,

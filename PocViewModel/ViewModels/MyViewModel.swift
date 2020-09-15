@@ -5,7 +5,7 @@
 import Foundation
 import Combine
 
-class MyViewModel: ObservableObject {
+class MyViewModel: MyViewModelProtocol {
     
     @Published var value: String = ""
     private var sub: Cancellable!
