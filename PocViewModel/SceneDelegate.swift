@@ -15,8 +15,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
-        // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView<MyViewModel>().environmentObject(MyViewModel())
+        #if UITESTS
+            let contentView: AnyView
+            let scenarioName = ProcessInfo.processInfo.environment["UI_TEST_SCENARIO"]
+            switch scenarioName {
+            case "scenario1":
+                contentView = AnyView(ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake1", boolValue: true)))
+            case "scenario2":
+                contentView = AnyView(ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake2", boolValue: false)))
+            default:
+                fatalError("no scenario defined")
+            }
+        #else
+            let contentView = ContentView<MyViewModel>().environmentObject(MyViewModel())
+        #endif
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

@@ -10,7 +10,7 @@ struct ContentView<Model: MyViewModelProtocol>: View {
     
     var body: some View {
         VStack {
-            Text(model.value)
+            Text(model.value).accessibility(identifier: "my_text")
             Toggle(isOn: $model.boolValue) {
                 Text("Toggle")
             }
