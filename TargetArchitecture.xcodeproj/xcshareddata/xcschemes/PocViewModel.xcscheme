@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A7DC236E250FA7000012EA25"
-               BuildableName = "PocViewModel.app"
-               BlueprintName = "PocViewModel"
-               ReferencedContainer = "container:PocViewModel.xcodeproj">
+               BuildableName = "TargetArchitecture.app"
+               BlueprintName = "TargetArchitecture"
+               ReferencedContainer = "container:TargetArchitecture.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A7DC2384250FA7020012EA25"
-               BuildableName = "PocViewModelTests.xctest"
-               BlueprintName = "PocViewModelTests"
-               ReferencedContainer = "container:PocViewModel.xcodeproj">
+               BuildableName = "TargetArchitectureTests.xctest"
+               BlueprintName = "TargetArchitectureTests"
+               ReferencedContainer = "container:TargetArchitecture.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A7DC238F250FA7020012EA25"
-               BuildableName = "PocViewModelUITests.xctest"
-               BlueprintName = "PocViewModelUITests"
-               ReferencedContainer = "container:PocViewModel.xcodeproj">
+               BuildableName = "TargetArchitectureUITests.xctest"
+               BlueprintName = "TargetArchitectureUITests"
+               ReferencedContainer = "container:TargetArchitecture.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A7DC236E250FA7000012EA25"
-            BuildableName = "PocViewModel.app"
-            BlueprintName = "PocViewModel"
-            ReferencedContainer = "container:PocViewModel.xcodeproj">
+            BuildableName = "TargetArchitecture.app"
+            BlueprintName = "TargetArchitecture"
+            ReferencedContainer = "container:TargetArchitecture.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A7DC236E250FA7000012EA25"
-            BuildableName = "PocViewModel.app"
-            BlueprintName = "PocViewModel"
-            ReferencedContainer = "container:PocViewModel.xcodeproj">
+            BuildableName = "TargetArchitecture.app"
+            BlueprintName = "TargetArchitecture"
+            ReferencedContainer = "container:TargetArchitecture.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

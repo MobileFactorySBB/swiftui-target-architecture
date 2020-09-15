@@ -4,7 +4,7 @@
 
 import XCTest
 import Combine
-@testable import PocViewModel
+@testable import TargetArchitecture
 
 class MyModelTests: XCTestCase {
     

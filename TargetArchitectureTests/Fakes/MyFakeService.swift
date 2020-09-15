@@ -4,7 +4,7 @@
 
 import Foundation
 import Combine
-@testable import PocViewModel
+@testable import TargetArchitecture
 
 class MyFakeService: MyServiceProtocol {
     

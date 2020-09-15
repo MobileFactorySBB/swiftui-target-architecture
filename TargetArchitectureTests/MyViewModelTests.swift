@@ -4,30 +4,30 @@
 
 import XCTest
 import Combine
-@testable import PocViewModel
+@testable import TargetArchitecture
 
-class MyServiceTests: XCTestCase {
+class MyViewModelTests: XCTestCase {
     
-    private var service: MyService!
+    private var viewModel: MyViewModel!
+    private var fakeModel: MyFakeModel!
 
     override func setUp() {
-        service = MyService()
+        fakeModel = MyFakeModel()
+        viewModel = MyViewModel(model: fakeModel)
     }
 
-    func testMyService() {
+    func testMyViewModel() {
         let expectation = self.expectation(description: "wait...")
         
         var i = 0
-        let start = Date()
-        let sub = service.values.sink { value in
+        let sub = viewModel.$value.sink { value in
             i += 1
             switch i {
             case 1:
-                XCTAssertEqual(start.timeIntervalSinceNow, -1.0, accuracy: 0.5)
+                XCTAssertEqual(value, "")
+                self.fakeModel.valuesSubject.send("test")
             case 2:
-                XCTAssertEqual(start.timeIntervalSinceNow, -2.0, accuracy: 0.5)
-            case 3:
-                XCTAssertEqual(start.timeIntervalSinceNow, -3.0, accuracy: 0.5)
+                XCTAssertEqual(value, "test")
                 expectation.fulfill()
             default:
                 XCTFail()

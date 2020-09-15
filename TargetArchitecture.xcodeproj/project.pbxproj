@@ -46,7 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A7DC236F250FA7000012EA25 /* PocViewModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocViewModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7DC236F250FA7000012EA25 /* TargetArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TargetArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7DC2372250FA7000012EA25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7DC2374250FA7000012EA25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A7DC2376250FA7000012EA25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,9 +54,9 @@
 		A7DC237B250FA7020012EA25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A7DC237E250FA7020012EA25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7DC2380250FA7020012EA25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7DC2385250FA7020012EA25 /* PocViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7DC2385250FA7020012EA25 /* TargetArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TargetArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7DC238B250FA7020012EA25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7DC2390250FA7020012EA25 /* PocViewModelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocViewModelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7DC2390250FA7020012EA25 /* TargetArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TargetArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7DC2394250FA7020012EA25 /* PocViewModelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocViewModelUITests.swift; sourceTree = "<group>"; };
 		A7DC2396250FA7020012EA25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7DC23A6250FA7CC0012EA25 /* MyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyService.swift; sourceTree = "<group>"; };
@@ -101,9 +101,9 @@
 		A7DC2366250FA7000012EA25 = {
 			isa = PBXGroup;
 			children = (
-				A7DC2371250FA7000012EA25 /* PocViewModel */,
-				A7DC2388250FA7020012EA25 /* PocViewModelTests */,
-				A7DC2393250FA7020012EA25 /* PocViewModelUITests */,
+				A7DC2371250FA7000012EA25 /* TargetArchitecture */,
+				A7DC2388250FA7020012EA25 /* TargetArchitectureTests */,
+				A7DC2393250FA7020012EA25 /* TargetArchitectureUITests */,
 				A7DC2370250FA7000012EA25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,14 +111,14 @@
 		A7DC2370250FA7000012EA25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A7DC236F250FA7000012EA25 /* PocViewModel.app */,
-				A7DC2385250FA7020012EA25 /* PocViewModelTests.xctest */,
-				A7DC2390250FA7020012EA25 /* PocViewModelUITests.xctest */,
+				A7DC236F250FA7000012EA25 /* TargetArchitecture.app */,
+				A7DC2385250FA7020012EA25 /* TargetArchitectureTests.xctest */,
+				A7DC2390250FA7020012EA25 /* TargetArchitectureUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A7DC2371250FA7000012EA25 /* PocViewModel */ = {
+		A7DC2371250FA7000012EA25 /* TargetArchitecture */ = {
 			isa = PBXGroup;
 			children = (
 				A7DC2372250FA7000012EA25 /* AppDelegate.swift */,
@@ -133,7 +133,7 @@
 				A7DC2380250FA7020012EA25 /* Info.plist */,
 				A7DC237A250FA7020012EA25 /* Preview Content */,
 			);
-			path = PocViewModel;
+			path = TargetArchitecture;
 			sourceTree = "<group>";
 		};
 		A7DC237A250FA7020012EA25 /* Preview Content */ = {
@@ -144,7 +144,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A7DC2388250FA7020012EA25 /* PocViewModelTests */ = {
+		A7DC2388250FA7020012EA25 /* TargetArchitectureTests */ = {
 			isa = PBXGroup;
 			children = (
 				A7DC238B250FA7020012EA25 /* Info.plist */,
@@ -153,16 +153,16 @@
 				A7DC23BE2510832A0012EA25 /* MyViewModelTests.swift */,
 				A7DC23B2250FBA330012EA25 /* Fakes */,
 			);
-			path = PocViewModelTests;
+			path = TargetArchitectureTests;
 			sourceTree = "<group>";
 		};
-		A7DC2393250FA7020012EA25 /* PocViewModelUITests */ = {
+		A7DC2393250FA7020012EA25 /* TargetArchitectureUITests */ = {
 			isa = PBXGroup;
 			children = (
 				A7DC2394250FA7020012EA25 /* PocViewModelUITests.swift */,
 				A7DC2396250FA7020012EA25 /* Info.plist */,
 			);
-			path = PocViewModelUITests;
+			path = TargetArchitectureUITests;
 			sourceTree = "<group>";
 		};
 		A7DC23A2250FA73F0012EA25 /* Views */ = {
@@ -220,9 +220,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A7DC236E250FA7000012EA25 /* PocViewModel */ = {
+		A7DC236E250FA7000012EA25 /* TargetArchitecture */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7DC2399250FA7020012EA25 /* Build configuration list for PBXNativeTarget "PocViewModel" */;
+			buildConfigurationList = A7DC2399250FA7020012EA25 /* Build configuration list for PBXNativeTarget "TargetArchitecture" */;
 			buildPhases = (
 				A7DC236B250FA7000012EA25 /* Sources */,
 				A7DC236C250FA7000012EA25 /* Frameworks */,
@@ -232,14 +232,14 @@
 			);
 			dependencies = (
 			);
-			name = PocViewModel;
+			name = TargetArchitecture;
 			productName = PocViewModel;
-			productReference = A7DC236F250FA7000012EA25 /* PocViewModel.app */;
+			productReference = A7DC236F250FA7000012EA25 /* TargetArchitecture.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A7DC2384250FA7020012EA25 /* PocViewModelTests */ = {
+		A7DC2384250FA7020012EA25 /* TargetArchitectureTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7DC239C250FA7020012EA25 /* Build configuration list for PBXNativeTarget "PocViewModelTests" */;
+			buildConfigurationList = A7DC239C250FA7020012EA25 /* Build configuration list for PBXNativeTarget "TargetArchitectureTests" */;
 			buildPhases = (
 				A7DC2381250FA7020012EA25 /* Sources */,
 				A7DC2382250FA7020012EA25 /* Frameworks */,
@@ -250,14 +250,14 @@
 			dependencies = (
 				A7DC2387250FA7020012EA25 /* PBXTargetDependency */,
 			);
-			name = PocViewModelTests;
+			name = TargetArchitectureTests;
 			productName = PocViewModelTests;
-			productReference = A7DC2385250FA7020012EA25 /* PocViewModelTests.xctest */;
+			productReference = A7DC2385250FA7020012EA25 /* TargetArchitectureTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A7DC238F250FA7020012EA25 /* PocViewModelUITests */ = {
+		A7DC238F250FA7020012EA25 /* TargetArchitectureUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7DC239F250FA7020012EA25 /* Build configuration list for PBXNativeTarget "PocViewModelUITests" */;
+			buildConfigurationList = A7DC239F250FA7020012EA25 /* Build configuration list for PBXNativeTarget "TargetArchitectureUITests" */;
 			buildPhases = (
 				A7DC238C250FA7020012EA25 /* Sources */,
 				A7DC238D250FA7020012EA25 /* Frameworks */,
@@ -268,9 +268,9 @@
 			dependencies = (
 				A7DC2392250FA7020012EA25 /* PBXTargetDependency */,
 			);
-			name = PocViewModelUITests;
+			name = TargetArchitectureUITests;
 			productName = PocViewModelUITests;
-			productReference = A7DC2390250FA7020012EA25 /* PocViewModelUITests.xctest */;
+			productReference = A7DC2390250FA7020012EA25 /* TargetArchitectureUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -296,7 +296,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A7DC236A250FA7000012EA25 /* Build configuration list for PBXProject "PocViewModel" */;
+			buildConfigurationList = A7DC236A250FA7000012EA25 /* Build configuration list for PBXProject "TargetArchitecture" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -309,9 +309,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A7DC236E250FA7000012EA25 /* PocViewModel */,
-				A7DC2384250FA7020012EA25 /* PocViewModelTests */,
-				A7DC238F250FA7020012EA25 /* PocViewModelUITests */,
+				A7DC236E250FA7000012EA25 /* TargetArchitecture */,
+				A7DC2384250FA7020012EA25 /* TargetArchitectureTests */,
+				A7DC238F250FA7020012EA25 /* TargetArchitectureUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -386,12 +386,12 @@
 /* Begin PBXTargetDependency section */
 		A7DC2387250FA7020012EA25 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A7DC236E250FA7000012EA25 /* PocViewModel */;
+			target = A7DC236E250FA7000012EA25 /* TargetArchitecture */;
 			targetProxy = A7DC2386250FA7020012EA25 /* PBXContainerItemProxy */;
 		};
 		A7DC2392250FA7020012EA25 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A7DC236E250FA7000012EA25 /* PocViewModel */;
+			target = A7DC236E250FA7000012EA25 /* TargetArchitecture */;
 			targetProxy = A7DC2391250FA7020012EA25 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -527,15 +527,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"PocViewModel/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TargetArchitecture/Preview Content\"";
 				DEVELOPMENT_TEAM = P2M8L992PE;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = PocViewModel/Info.plist;
+				INFOPLIST_FILE = TargetArchitecture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.PocViewModel;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.TargetArchitecture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -547,15 +547,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"PocViewModel/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TargetArchitecture/Preview Content\"";
 				DEVELOPMENT_TEAM = P2M8L992PE;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = PocViewModel/Info.plist;
+				INFOPLIST_FILE = TargetArchitecture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.PocViewModel;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.TargetArchitecture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -569,18 +569,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P2M8L992PE;
-				INFOPLIST_FILE = PocViewModelTests/Info.plist;
+				INFOPLIST_FILE = TargetArchitectureTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.PocViewModelTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.TargetArchitectureTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocViewModel.app/PocViewModel";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TargetArchitecture.app/TargetArchitecture";
 			};
 			name = Debug;
 		};
@@ -591,18 +591,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P2M8L992PE;
-				INFOPLIST_FILE = PocViewModelTests/Info.plist;
+				INFOPLIST_FILE = TargetArchitectureTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.PocViewModelTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.TargetArchitectureTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocViewModel.app/PocViewModel";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TargetArchitecture.app/TargetArchitecture";
 			};
 			name = Release;
 		};
@@ -612,17 +612,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P2M8L992PE;
-				INFOPLIST_FILE = PocViewModelUITests/Info.plist;
+				INFOPLIST_FILE = TargetArchitectureUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.PocViewModelUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.TargetArchitectureUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PocViewModel;
+				TEST_TARGET_NAME = TargetArchitecture;
 			};
 			name = Debug;
 		};
@@ -632,17 +632,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P2M8L992PE;
-				INFOPLIST_FILE = PocViewModelUITests/Info.plist;
+				INFOPLIST_FILE = TargetArchitectureUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.PocViewModelUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.TargetArchitectureUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PocViewModel;
+				TEST_TARGET_NAME = TargetArchitecture;
 			};
 			name = Release;
 		};
@@ -711,15 +711,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"PocViewModel/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TargetArchitecture/Preview Content\"";
 				DEVELOPMENT_TEAM = P2M8L992PE;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = PocViewModel/Info.plist;
+				INFOPLIST_FILE = TargetArchitecture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.PocViewModel;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.TargetArchitecture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -733,18 +733,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P2M8L992PE;
-				INFOPLIST_FILE = PocViewModelTests/Info.plist;
+				INFOPLIST_FILE = TargetArchitectureTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.PocViewModelTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.TargetArchitectureTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocViewModel.app/PocViewModel";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TargetArchitecture.app/TargetArchitecture";
 			};
 			name = DebugUITests;
 		};
@@ -754,24 +754,24 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P2M8L992PE;
-				INFOPLIST_FILE = PocViewModelUITests/Info.plist;
+				INFOPLIST_FILE = TargetArchitectureUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.PocViewModelUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.TargetArchitectureUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PocViewModel;
+				TEST_TARGET_NAME = TargetArchitecture;
 			};
 			name = DebugUITests;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A7DC236A250FA7000012EA25 /* Build configuration list for PBXProject "PocViewModel" */ = {
+		A7DC236A250FA7000012EA25 /* Build configuration list for PBXProject "TargetArchitecture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7DC2397250FA7020012EA25 /* Debug */,
@@ -781,7 +781,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7DC2399250FA7020012EA25 /* Build configuration list for PBXNativeTarget "PocViewModel" */ = {
+		A7DC2399250FA7020012EA25 /* Build configuration list for PBXNativeTarget "TargetArchitecture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7DC239A250FA7020012EA25 /* Debug */,
@@ -791,7 +791,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7DC239C250FA7020012EA25 /* Build configuration list for PBXNativeTarget "PocViewModelTests" */ = {
+		A7DC239C250FA7020012EA25 /* Build configuration list for PBXNativeTarget "TargetArchitectureTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7DC239D250FA7020012EA25 /* Debug */,
@@ -801,7 +801,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7DC239F250FA7020012EA25 /* Build configuration list for PBXNativeTarget "PocViewModelUITests" */ = {
+		A7DC239F250FA7020012EA25 /* Build configuration list for PBXNativeTarget "TargetArchitectureUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7DC23A0250FA7020012EA25 /* Debug */,

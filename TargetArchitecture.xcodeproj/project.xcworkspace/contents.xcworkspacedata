@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:PocViewModel.xcodeproj">
+      location = "self:/Users/fv/Desktop/PocViewModel/TargetArchitecture.xcodeproj">
    </FileRef>
 </Workspace>
