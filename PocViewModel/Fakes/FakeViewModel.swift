@@ -8,10 +8,16 @@ import Combine
 class FakeViewModel: MyViewModelProtocol {
     
     var value: String
+    var boolValue: Bool
     
     let objectWillChange = ObservableObjectPublisher()
     
-    init(value: String) {
+    init(value: String, boolValue: Bool) {
         self.value = value
+        self.boolValue = boolValue
+    }
+    
+    func myAction() {
+        print("fake action")
     }
 }

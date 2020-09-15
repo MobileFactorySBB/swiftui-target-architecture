@@ -9,12 +9,21 @@ struct ContentView<Model: MyViewModelProtocol>: View {
     @EnvironmentObject var model: Model
     
     var body: some View {
-        Text(model.value)
+        VStack {
+            Text(model.value)
+            Toggle(isOn: $model.boolValue) {
+                Text("Toggle")
+            }
+            Button(action: model.myAction) {
+                Text("Button")
+            }
+        }
+        .padding(8)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake"))
+        ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake", boolValue: true))
     }
 }
