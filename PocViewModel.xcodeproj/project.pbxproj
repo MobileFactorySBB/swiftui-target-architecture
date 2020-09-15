@@ -24,6 +24,8 @@
 		A7DC23B6250FC1070012EA25 /* MyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B5250FC1070012EA25 /* MyViewModel.swift */; };
 		A7DC23B8250FC4F40012EA25 /* MyViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B7250FC4F40012EA25 /* MyViewModelProtocol.swift */; };
 		A7DC23BB2510801D0012EA25 /* FakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BA2510801D0012EA25 /* FakeViewModel.swift */; };
+		A7DC23BD251082A40012EA25 /* MyFakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BC251082A40012EA25 /* MyFakeModel.swift */; };
+		A7DC23BF2510832A0012EA25 /* MyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BE2510832A0012EA25 /* MyViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		A7DC23B5250FC1070012EA25 /* MyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewModel.swift; sourceTree = "<group>"; };
 		A7DC23B7250FC4F40012EA25 /* MyViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewModelProtocol.swift; sourceTree = "<group>"; };
 		A7DC23BA2510801D0012EA25 /* FakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeViewModel.swift; sourceTree = "<group>"; };
+		A7DC23BC251082A40012EA25 /* MyFakeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFakeModel.swift; sourceTree = "<group>"; };
+		A7DC23BE2510832A0012EA25 /* MyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 				A7DC238B250FA7020012EA25 /* Info.plist */,
 				A7DC23AA250FA8CC0012EA25 /* MyServiceTests.swift */,
 				A7DC23B0250FB9C60012EA25 /* MyModelTests.swift */,
+				A7DC23BE2510832A0012EA25 /* MyViewModelTests.swift */,
 				A7DC23B2250FBA330012EA25 /* Fakes */,
 			);
 			path = PocViewModelTests;
@@ -199,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				A7DC23B3250FBA440012EA25 /* MyFakeService.swift */,
+				A7DC23BC251082A40012EA25 /* MyFakeModel.swift */,
 			);
 			path = Fakes;
 			sourceTree = "<group>";
@@ -361,6 +367,8 @@
 			files = (
 				A7DC23AB250FA8CC0012EA25 /* MyServiceTests.swift in Sources */,
 				A7DC23B1250FB9C60012EA25 /* MyModelTests.swift in Sources */,
+				A7DC23BD251082A40012EA25 /* MyFakeModel.swift in Sources */,
+				A7DC23BF2510832A0012EA25 /* MyViewModelTests.swift in Sources */,
 				A7DC23B4250FBA440012EA25 /* MyFakeService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
