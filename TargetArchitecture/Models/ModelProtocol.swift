@@ -5,7 +5,7 @@
 import Foundation
 import Combine
 
-protocol MyModelProtocol {
+protocol ModelProtocol {
     
     var values: AnyPublisher<String, Never> { get }
 }

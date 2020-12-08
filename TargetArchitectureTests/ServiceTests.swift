@@ -6,15 +6,15 @@ import XCTest
 import Combine
 @testable import TargetArchitecture
 
-class MyServiceTests: XCTestCase {
+class ServiceTests: XCTestCase {
     
-    private var service: MyService!
+    private var service: Service!
 
     override func setUp() {
-        service = MyService()
+        service = Service()
     }
 
-    func testMyService() {
+    func testService() {
         let expectation = self.expectation(description: "wait...")
         
         var i = 0

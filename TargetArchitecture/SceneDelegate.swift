@@ -20,14 +20,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let scenarioName = ProcessInfo.processInfo.environment["UI_TEST_SCENARIO"]
             switch scenarioName {
             case "scenario1":
-                contentView = AnyView(ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake1", boolValue: true)))
+                contentView = AnyView(ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake1", showValue: true)))
             case "scenario2":
-                contentView = AnyView(ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake2", boolValue: false)))
+                contentView = AnyView(ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake2", showValue: false)))
             default:
                 fatalError("no scenario defined")
             }
         #else
-            let contentView = ContentView<MyViewModel>().environmentObject(MyViewModel())
+            let contentView = ContentView<ViewModel>().environmentObject(ViewModel())
         #endif
 
         // Use a UIHostingController as window root view controller.

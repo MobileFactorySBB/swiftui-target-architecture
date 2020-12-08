@@ -4,7 +4,7 @@
 
 import Foundation
 
-class MyService: MyServiceProtocol {
+class Service: ServiceProtocol {
     
     let values = Timer.publish(every: 1.0, on: .main, in: .default).autoconnect().eraseToAnyPublisher()
 }

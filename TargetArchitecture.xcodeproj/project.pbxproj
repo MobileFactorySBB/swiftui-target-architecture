@@ -14,18 +14,18 @@
 		A7DC237C250FA7020012EA25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7DC237B250FA7020012EA25 /* Preview Assets.xcassets */; };
 		A7DC237F250FA7020012EA25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7DC237D250FA7020012EA25 /* LaunchScreen.storyboard */; };
 		A7DC2395250FA7020012EA25 /* PocViewModelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC2394250FA7020012EA25 /* PocViewModelUITests.swift */; };
-		A7DC23A7250FA7CC0012EA25 /* MyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23A6250FA7CC0012EA25 /* MyService.swift */; };
-		A7DC23A9250FA7D70012EA25 /* MyServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23A8250FA7D70012EA25 /* MyServiceProtocol.swift */; };
-		A7DC23AB250FA8CC0012EA25 /* MyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23AA250FA8CC0012EA25 /* MyServiceTests.swift */; };
-		A7DC23AD250FB81E0012EA25 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23AC250FB81E0012EA25 /* MyModel.swift */; };
-		A7DC23AF250FB82C0012EA25 /* MyModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23AE250FB82C0012EA25 /* MyModelProtocol.swift */; };
-		A7DC23B1250FB9C60012EA25 /* MyModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B0250FB9C60012EA25 /* MyModelTests.swift */; };
-		A7DC23B4250FBA440012EA25 /* MyFakeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B3250FBA440012EA25 /* MyFakeService.swift */; };
-		A7DC23B6250FC1070012EA25 /* MyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B5250FC1070012EA25 /* MyViewModel.swift */; };
-		A7DC23B8250FC4F40012EA25 /* MyViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B7250FC4F40012EA25 /* MyViewModelProtocol.swift */; };
+		A7DC23A7250FA7CC0012EA25 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23A6250FA7CC0012EA25 /* Service.swift */; };
+		A7DC23A9250FA7D70012EA25 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23A8250FA7D70012EA25 /* ServiceProtocol.swift */; };
+		A7DC23AB250FA8CC0012EA25 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23AA250FA8CC0012EA25 /* ServiceTests.swift */; };
+		A7DC23AD250FB81E0012EA25 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23AC250FB81E0012EA25 /* Model.swift */; };
+		A7DC23AF250FB82C0012EA25 /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23AE250FB82C0012EA25 /* ModelProtocol.swift */; };
+		A7DC23B1250FB9C60012EA25 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B0250FB9C60012EA25 /* ModelTests.swift */; };
+		A7DC23B4250FBA440012EA25 /* FakeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B3250FBA440012EA25 /* FakeService.swift */; };
+		A7DC23B6250FC1070012EA25 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B5250FC1070012EA25 /* ViewModel.swift */; };
+		A7DC23B8250FC4F40012EA25 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B7250FC4F40012EA25 /* ViewModelProtocol.swift */; };
 		A7DC23BB2510801D0012EA25 /* FakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BA2510801D0012EA25 /* FakeViewModel.swift */; };
-		A7DC23BD251082A40012EA25 /* MyFakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BC251082A40012EA25 /* MyFakeModel.swift */; };
-		A7DC23BF2510832A0012EA25 /* MyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BE2510832A0012EA25 /* MyViewModelTests.swift */; };
+		A7DC23BD251082A40012EA25 /* FakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BC251082A40012EA25 /* FakeModel.swift */; };
+		A7DC23BF2510832A0012EA25 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BE2510832A0012EA25 /* ViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,18 +59,18 @@
 		A7DC2390250FA7020012EA25 /* TargetArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TargetArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7DC2394250FA7020012EA25 /* PocViewModelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocViewModelUITests.swift; sourceTree = "<group>"; };
 		A7DC2396250FA7020012EA25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7DC23A6250FA7CC0012EA25 /* MyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyService.swift; sourceTree = "<group>"; };
-		A7DC23A8250FA7D70012EA25 /* MyServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyServiceProtocol.swift; sourceTree = "<group>"; };
-		A7DC23AA250FA8CC0012EA25 /* MyServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyServiceTests.swift; sourceTree = "<group>"; };
-		A7DC23AC250FB81E0012EA25 /* MyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
-		A7DC23AE250FB82C0012EA25 /* MyModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModelProtocol.swift; sourceTree = "<group>"; };
-		A7DC23B0250FB9C60012EA25 /* MyModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModelTests.swift; sourceTree = "<group>"; };
-		A7DC23B3250FBA440012EA25 /* MyFakeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFakeService.swift; sourceTree = "<group>"; };
-		A7DC23B5250FC1070012EA25 /* MyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewModel.swift; sourceTree = "<group>"; };
-		A7DC23B7250FC4F40012EA25 /* MyViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewModelProtocol.swift; sourceTree = "<group>"; };
+		A7DC23A6250FA7CC0012EA25 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		A7DC23A8250FA7D70012EA25 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		A7DC23AA250FA8CC0012EA25 /* ServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
+		A7DC23AC250FB81E0012EA25 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A7DC23AE250FB82C0012EA25 /* ModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
+		A7DC23B0250FB9C60012EA25 /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		A7DC23B3250FBA440012EA25 /* FakeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeService.swift; sourceTree = "<group>"; };
+		A7DC23B5250FC1070012EA25 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A7DC23B7250FC4F40012EA25 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		A7DC23BA2510801D0012EA25 /* FakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeViewModel.swift; sourceTree = "<group>"; };
-		A7DC23BC251082A40012EA25 /* MyFakeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFakeModel.swift; sourceTree = "<group>"; };
-		A7DC23BE2510832A0012EA25 /* MyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewModelTests.swift; sourceTree = "<group>"; };
+		A7DC23BC251082A40012EA25 /* FakeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeModel.swift; sourceTree = "<group>"; };
+		A7DC23BE2510832A0012EA25 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,9 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				A7DC238B250FA7020012EA25 /* Info.plist */,
-				A7DC23AA250FA8CC0012EA25 /* MyServiceTests.swift */,
-				A7DC23B0250FB9C60012EA25 /* MyModelTests.swift */,
-				A7DC23BE2510832A0012EA25 /* MyViewModelTests.swift */,
+				A7DC23AA250FA8CC0012EA25 /* ServiceTests.swift */,
+				A7DC23B0250FB9C60012EA25 /* ModelTests.swift */,
+				A7DC23BE2510832A0012EA25 /* ViewModelTests.swift */,
 				A7DC23B2250FBA330012EA25 /* Fakes */,
 			);
 			path = TargetArchitectureTests;
@@ -176,8 +176,8 @@
 		A7DC23A3250FA74B0012EA25 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				A7DC23B5250FC1070012EA25 /* MyViewModel.swift */,
-				A7DC23B7250FC4F40012EA25 /* MyViewModelProtocol.swift */,
+				A7DC23B5250FC1070012EA25 /* ViewModel.swift */,
+				A7DC23B7250FC4F40012EA25 /* ViewModelProtocol.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -185,8 +185,8 @@
 		A7DC23A4250FA7530012EA25 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A7DC23AC250FB81E0012EA25 /* MyModel.swift */,
-				A7DC23AE250FB82C0012EA25 /* MyModelProtocol.swift */,
+				A7DC23AC250FB81E0012EA25 /* Model.swift */,
+				A7DC23AE250FB82C0012EA25 /* ModelProtocol.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,8 +194,8 @@
 		A7DC23A5250FA75F0012EA25 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				A7DC23A6250FA7CC0012EA25 /* MyService.swift */,
-				A7DC23A8250FA7D70012EA25 /* MyServiceProtocol.swift */,
+				A7DC23A6250FA7CC0012EA25 /* Service.swift */,
+				A7DC23A8250FA7D70012EA25 /* ServiceProtocol.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -203,8 +203,8 @@
 		A7DC23B2250FBA330012EA25 /* Fakes */ = {
 			isa = PBXGroup;
 			children = (
-				A7DC23B3250FBA440012EA25 /* MyFakeService.swift */,
-				A7DC23BC251082A40012EA25 /* MyFakeModel.swift */,
+				A7DC23B3250FBA440012EA25 /* FakeService.swift */,
+				A7DC23BC251082A40012EA25 /* FakeModel.swift */,
 			);
 			path = Fakes;
 			sourceTree = "<group>";
@@ -350,14 +350,14 @@
 			files = (
 				A7DC2373250FA7000012EA25 /* AppDelegate.swift in Sources */,
 				A7DC23BB2510801D0012EA25 /* FakeViewModel.swift in Sources */,
-				A7DC23AD250FB81E0012EA25 /* MyModel.swift in Sources */,
-				A7DC23B8250FC4F40012EA25 /* MyViewModelProtocol.swift in Sources */,
-				A7DC23A7250FA7CC0012EA25 /* MyService.swift in Sources */,
+				A7DC23AD250FB81E0012EA25 /* Model.swift in Sources */,
+				A7DC23B8250FC4F40012EA25 /* ViewModelProtocol.swift in Sources */,
+				A7DC23A7250FA7CC0012EA25 /* Service.swift in Sources */,
 				A7DC2375250FA7000012EA25 /* SceneDelegate.swift in Sources */,
 				A7DC2377250FA7000012EA25 /* ContentView.swift in Sources */,
-				A7DC23AF250FB82C0012EA25 /* MyModelProtocol.swift in Sources */,
-				A7DC23B6250FC1070012EA25 /* MyViewModel.swift in Sources */,
-				A7DC23A9250FA7D70012EA25 /* MyServiceProtocol.swift in Sources */,
+				A7DC23AF250FB82C0012EA25 /* ModelProtocol.swift in Sources */,
+				A7DC23B6250FC1070012EA25 /* ViewModel.swift in Sources */,
+				A7DC23A9250FA7D70012EA25 /* ServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,11 +365,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7DC23AB250FA8CC0012EA25 /* MyServiceTests.swift in Sources */,
-				A7DC23B1250FB9C60012EA25 /* MyModelTests.swift in Sources */,
-				A7DC23BD251082A40012EA25 /* MyFakeModel.swift in Sources */,
-				A7DC23BF2510832A0012EA25 /* MyViewModelTests.swift in Sources */,
-				A7DC23B4250FBA440012EA25 /* MyFakeService.swift in Sources */,
+				A7DC23AB250FA8CC0012EA25 /* ServiceTests.swift in Sources */,
+				A7DC23B1250FB9C60012EA25 /* ModelTests.swift in Sources */,
+				A7DC23BD251082A40012EA25 /* FakeModel.swift in Sources */,
+				A7DC23BF2510832A0012EA25 /* ViewModelTests.swift in Sources */,
+				A7DC23B4250FBA440012EA25 /* FakeService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

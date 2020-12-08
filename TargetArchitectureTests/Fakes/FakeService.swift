@@ -6,7 +6,7 @@ import Foundation
 import Combine
 @testable import TargetArchitecture
 
-class MyFakeService: MyServiceProtocol {
+class FakeService: ServiceProtocol {
     
     var values: AnyPublisher<Date, Never> {
         return valuesSubject.eraseToAnyPublisher()
