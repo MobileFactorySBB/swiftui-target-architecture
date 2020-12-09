@@ -20,13 +20,9 @@ class PocViewModelUITests: XCTestCase {
         app.launchEnvironment.updateValue("scenario1", forKey: "UI_TEST_SCENARIO")
         app.launch()
         
-        XCTAssertEqual(app.switches["Toggle"].value as? String, "1")
-        app.switches["Toggle"].tap()
-        XCTAssertEqual(app.switches["Toggle"].value as? String, "0")
-        
-        XCTAssertEqual(app/*@START_MENU_TOKEN@*/.staticTexts["my_text"]/*[[".staticTexts[\"2020-09-15 07:29:33 +0000\"]",".staticTexts[\"my_text\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.label, "fake1")
-        app.buttons["Button"].tap()
-        XCTAssertEqual(app/*@START_MENU_TOKEN@*/.staticTexts["my_text"]/*[[".staticTexts[\"2020-09-15 07:29:33 +0000\"]",".staticTexts[\"my_text\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.label, "fakeAction")
+        XCTAssertEqual(app.switches["Show current time"].value as? String, "1")
+        app.switches["Show current time"].tap()
+        XCTAssertEqual(app.switches["Show current time"].value as? String, "0")
     }
     
     func testTwo() throws {
@@ -34,9 +30,9 @@ class PocViewModelUITests: XCTestCase {
         app.launchEnvironment.updateValue("scenario2", forKey: "UI_TEST_SCENARIO")
         app.launch()
         
-        XCTAssertEqual(app.switches["Toggle"].value as? String, "0")
-        app.switches["Toggle"].tap()
-        XCTAssertEqual(app.switches["Toggle"].value as? String, "1")
+        XCTAssertEqual(app.switches["Show current time"].value as? String, "0")
+        app.switches["Show current time"].tap()
+        XCTAssertEqual(app.switches["Show current time"].value as? String, "1")
         
         XCTAssertEqual(app/*@START_MENU_TOKEN@*/.staticTexts["my_text"]/*[[".staticTexts[\"2020-09-15 07:29:33 +0000\"]",".staticTexts[\"my_text\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.label, "fake2")
         app.buttons["Button"].tap()

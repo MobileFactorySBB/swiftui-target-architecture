@@ -4,15 +4,17 @@
 
 import SwiftUI
 
-struct ContentView<Model: MyViewModelProtocol>: View {
+struct ContentView<Model: ViewModelProtocol>: View {
     
     @EnvironmentObject var model: Model
     
     var body: some View {
         VStack {
-            Text(model.value).accessibility(identifier: "my_text")
-            Toggle(isOn: $model.boolValue) {
-                Text("Toggle")
+            Toggle(isOn: $model.showValue) {
+                Text("Show current time")
+            }
+            if model.showValue {
+                Text(model.value).accessibility(identifier: "my_text")
             }
             Button(action: model.myAction) {
                 Text("Button")
@@ -24,6 +26,6 @@ struct ContentView<Model: MyViewModelProtocol>: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake", boolValue: true))
+        ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake", showValue: true))
     }
 }

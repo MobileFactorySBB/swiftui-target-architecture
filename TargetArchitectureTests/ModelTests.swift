@@ -6,17 +6,17 @@ import XCTest
 import Combine
 @testable import TargetArchitecture
 
-class MyModelTests: XCTestCase {
+class ModelTests: XCTestCase {
     
-    private var model: MyModel!
-    private var fakeService: MyFakeService!
+    private var model: Model!
+    private var fakeService: FakeService!
 
     override func setUp() {
-        fakeService = MyFakeService()
-        model = MyModel(service: fakeService)
+        fakeService = FakeService()
+        model = Model(service: fakeService)
     }
     
-    func testMyModel() {
+    func testModel() {
         let expectation = self.expectation(description: "wait...")
         
         let date = Date()

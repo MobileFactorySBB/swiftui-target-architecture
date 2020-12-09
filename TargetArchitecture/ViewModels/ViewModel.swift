@@ -5,14 +5,14 @@
 import Foundation
 import Combine
 
-class MyViewModel: MyViewModelProtocol {
+class ViewModel: ViewModelProtocol {
     
     @Published var value: String = ""
-    @Published var boolValue: Bool = false
+    @Published var showValue: Bool = true
     
     private var sub: Cancellable!
     
-    init(model: MyModelProtocol = MyModel()) {
+    init(model: ModelProtocol = Model()) {
         sub = model.values.receive(on: RunLoop.main).assign(to: \.value, on: self)
     }
     

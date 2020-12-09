@@ -6,17 +6,17 @@ import XCTest
 import Combine
 @testable import TargetArchitecture
 
-class MyViewModelTests: XCTestCase {
+class ViewModelTests: XCTestCase {
     
-    private var viewModel: MyViewModel!
-    private var fakeModel: MyFakeModel!
+    private var viewModel: ViewModel!
+    private var fakeModel: FakeModel!
 
     override func setUp() {
-        fakeModel = MyFakeModel()
-        viewModel = MyViewModel(model: fakeModel)
+        fakeModel = FakeModel()
+        viewModel = ViewModel(model: fakeModel)
     }
 
-    func testMyViewModel() {
+    func testViewModel() {
         let expectation = self.expectation(description: "wait...")
         
         var i = 0

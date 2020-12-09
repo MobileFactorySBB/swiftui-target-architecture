@@ -6,7 +6,7 @@ import Foundation
 import Combine
 @testable import TargetArchitecture
 
-class MyFakeModel: MyModelProtocol {
+class FakeModel: ModelProtocol {
     
     var values: AnyPublisher<String, Never> {
         return valuesSubject.eraseToAnyPublisher()

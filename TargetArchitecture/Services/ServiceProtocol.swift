@@ -5,7 +5,7 @@
 import Foundation
 import Combine
 
-protocol MyServiceProtocol {
+protocol ServiceProtocol {
     
     var values: AnyPublisher<Date, Never> { get }
 }

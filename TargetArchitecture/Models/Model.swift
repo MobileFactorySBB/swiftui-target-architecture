@@ -5,11 +5,11 @@
 import Foundation
 import Combine
 
-class MyModel: MyModelProtocol {
+class Model: ModelProtocol {
     
     let values: AnyPublisher<String, Never>
-    
-    init(service: MyServiceProtocol = MyService()) {
+        
+    init(service: ServiceProtocol = Service()) {
         values = service.values.map({ $0.description }).eraseToAnyPublisher()
     }
 }

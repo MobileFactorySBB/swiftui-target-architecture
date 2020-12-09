@@ -4,10 +4,10 @@
 
 import Foundation
 
-protocol MyViewModelProtocol: ObservableObject {
+protocol ViewModelProtocol: ObservableObject {
     
     var value: String { get set }
-    var boolValue: Bool { get set }
+    var showValue: Bool { get set }
     
     func myAction()
 }

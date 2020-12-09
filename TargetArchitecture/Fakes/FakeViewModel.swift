@@ -5,7 +5,7 @@
 import Foundation
 import Combine
 
-class FakeViewModel: MyViewModelProtocol {
+class FakeViewModel: ViewModelProtocol {
     
     // synthetize version
 //    @Published var value: String
@@ -13,8 +13,10 @@ class FakeViewModel: MyViewModelProtocol {
     
     // manual version
     private var _value: String
-    private var _boolValue: Bool
+    private var _showValue: Bool
+    
     let objectWillChange = ObservableObjectPublisher()
+    
     var value: String {
         get {
             return _value
@@ -24,21 +26,22 @@ class FakeViewModel: MyViewModelProtocol {
             _value = newValue
         }
     }
-    var boolValue: Bool {
+    
+    var showValue: Bool {
         get {
-            return _boolValue
+            return _showValue
         }
         set {
             objectWillChange.send()
-            _boolValue = newValue
+            _showValue = newValue
         }
     }
     
-    init(value: String, boolValue: Bool) {
+    init(value: String, showValue: Bool) {
         _value = value
-        _boolValue = boolValue
+        _showValue = showValue
         self.value = value
-        self.boolValue = boolValue
+        self.showValue = showValue
     }
     
     func myAction() {
