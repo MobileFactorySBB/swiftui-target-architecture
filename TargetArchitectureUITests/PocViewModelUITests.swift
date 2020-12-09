@@ -34,8 +34,8 @@ class PocViewModelUITests: XCTestCase {
         app.switches["Show current time"].tap()
         XCTAssertEqual(app.switches["Show current time"].value as? String, "1")
         
-        XCTAssertEqual(app/*@START_MENU_TOKEN@*/.staticTexts["my_text"]/*[[".staticTexts[\"2020-09-15 07:29:33 +0000\"]",".staticTexts[\"my_text\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.label, "fake2")
+        XCTAssertEqual(app.staticTexts["my_text"].label, "fake2")
         app.buttons["Button"].tap()
-        XCTAssertEqual(app/*@START_MENU_TOKEN@*/.staticTexts["my_text"]/*[[".staticTexts[\"2020-09-15 07:29:33 +0000\"]",".staticTexts[\"my_text\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.label, "fakeAction")
+        XCTAssertEqual(app.staticTexts["my_text"].label, "fakeAction")
     }
 }
