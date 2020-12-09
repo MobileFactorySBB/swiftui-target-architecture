@@ -26,6 +26,7 @@
 		A7DC23BB2510801D0012EA25 /* FakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BA2510801D0012EA25 /* FakeViewModel.swift */; };
 		A7DC23BD251082A40012EA25 /* FakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BC251082A40012EA25 /* FakeModel.swift */; };
 		A7DC23BF2510832A0012EA25 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BE2510832A0012EA25 /* ViewModelTests.swift */; };
+		A7DEB8582580D43A000A94EA /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DEB8572580D43A000A94EA /* ServiceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		A7DC23BA2510801D0012EA25 /* FakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeViewModel.swift; sourceTree = "<group>"; };
 		A7DC23BC251082A40012EA25 /* FakeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeModel.swift; sourceTree = "<group>"; };
 		A7DC23BE2510832A0012EA25 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
+		A7DEB8572580D43A000A94EA /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 			children = (
 				A7DC23A6250FA7CC0012EA25 /* Service.swift */,
 				A7DC23A8250FA7D70012EA25 /* ServiceProtocol.swift */,
+				A7DEB8572580D43A000A94EA /* ServiceError.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				A7DC23A7250FA7CC0012EA25 /* Service.swift in Sources */,
 				A7DC2375250FA7000012EA25 /* SceneDelegate.swift in Sources */,
 				A7DC2377250FA7000012EA25 /* ContentView.swift in Sources */,
+				A7DEB8582580D43A000A94EA /* ServiceError.swift in Sources */,
 				A7DC23AF250FB82C0012EA25 /* ModelProtocol.swift in Sources */,
 				A7DC23B6250FC1070012EA25 /* ViewModel.swift in Sources */,
 				A7DC23A9250FA7D70012EA25 /* ServiceProtocol.swift in Sources */,

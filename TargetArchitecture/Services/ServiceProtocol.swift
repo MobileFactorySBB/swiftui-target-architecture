@@ -7,5 +7,8 @@ import Combine
 
 protocol ServiceProtocol {
     
-    var values: AnyPublisher<Date, Never> { get }
+    var clock: AnyPublisher<Date, ServiceError> { get }
+    
+    func startClock()
+    func stopClock()
 }

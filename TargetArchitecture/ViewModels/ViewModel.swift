@@ -7,8 +7,8 @@ import Combine
 
 class ViewModel: ViewModelProtocol {
     
-    @Published var value: String = ""
-    @Published var showValue: Bool = true
+    @Published var value: String = "Stopped"
+    @Published var isTimerStarted: Bool = false
     
     private var sub: Cancellable!
     

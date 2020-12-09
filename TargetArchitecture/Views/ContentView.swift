@@ -9,13 +9,11 @@ struct ContentView<Model: ViewModelProtocol>: View {
     @EnvironmentObject var model: Model
     
     var body: some View {
-        VStack {
-            Toggle(isOn: $model.showValue) {
-                Text("Show current time")
+        VStack(spacing: 8) {
+            Toggle(isOn: $model.isTimerStarted) {
+                Text("Start timer")
             }
-            if model.showValue {
-                Text(model.value).accessibility(identifier: "my_text")
-            }
+            Text(model.value).accessibility(identifier: "timer_value")
             Button(action: model.myAction) {
                 Text("Button")
             }
@@ -26,6 +24,11 @@ struct ContentView<Model: ViewModelProtocol>: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake", showValue: true))
+        Group {
+            ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake", isTimerStarted: true))
+                .previewDisplayName("ON")
+            ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake2", isTimerStarted: false))
+                .previewDisplayName("OFF")
+        }
     }
 }

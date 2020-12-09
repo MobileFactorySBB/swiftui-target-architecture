@@ -10,6 +10,6 @@ class Model: ModelProtocol {
     let values: AnyPublisher<String, Never>
     
     init(service: ServiceProtocol = Service()) {
-        values = service.values.map({ $0.description }).eraseToAnyPublisher()
+        values = service.clock.catch({ _ in return Just(Date()) }).map({ $0.description }).eraseToAnyPublisher()
     }
 }

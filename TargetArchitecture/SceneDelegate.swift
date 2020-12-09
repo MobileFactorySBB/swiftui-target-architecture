@@ -19,9 +19,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let scenarioName = ProcessInfo.processInfo.environment["UI_TEST_SCENARIO"]
         switch scenarioName {
         case "scenario1":
-            contentView = AnyView(ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake1", showValue: true)))
+            contentView = AnyView(ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake1", isTimerStarted: true)))
         case "scenario2":
-            contentView = AnyView(ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake2", showValue: false)))
+            contentView = AnyView(ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake2", isTimerStarted: false)))
         default:
             fatalError("no scenario defined")
         }

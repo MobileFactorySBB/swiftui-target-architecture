@@ -8,11 +8,11 @@ import Combine
 class FakeViewModel: ViewModelProtocol {
     
     @Published var value: String
-    @Published var showValue: Bool
+    @Published var isTimerStarted: Bool
     
-    init(value: String, showValue: Bool) {
+    init(value: String, isTimerStarted: Bool) {
         self.value = value
-        self.showValue = showValue
+        self.isTimerStarted = isTimerStarted
     }
     
     func myAction() {

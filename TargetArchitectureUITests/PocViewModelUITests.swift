@@ -20,9 +20,9 @@ class PocViewModelUITests: XCTestCase {
         app.launchEnvironment.updateValue("scenario1", forKey: "UI_TEST_SCENARIO")
         app.launch()
         
-        XCTAssertEqual(app.switches["Show current time"].value as? String, "1")
-        app.switches["Show current time"].tap()
-        XCTAssertEqual(app.switches["Show current time"].value as? String, "0")
+        XCTAssertEqual(app.switches["Start timer"].value as? String, "1")
+        app.switches["Start timer"].tap()
+        XCTAssertEqual(app.switches["Start timer"].value as? String, "0")
     }
     
     func testTwo() throws {
@@ -30,12 +30,12 @@ class PocViewModelUITests: XCTestCase {
         app.launchEnvironment.updateValue("scenario2", forKey: "UI_TEST_SCENARIO")
         app.launch()
         
-        XCTAssertEqual(app.switches["Show current time"].value as? String, "0")
-        app.switches["Show current time"].tap()
-        XCTAssertEqual(app.switches["Show current time"].value as? String, "1")
+        XCTAssertEqual(app.switches["Start timer"].value as? String, "0")
+        app.switches["Start timer"].tap()
+        XCTAssertEqual(app.switches["Start timer"].value as? String, "1")
         
-        XCTAssertEqual(app.staticTexts["my_text"].label, "fake2")
+        XCTAssertEqual(app.staticTexts["timer_value"].label, "fake2")
         app.buttons["Button"].tap()
-        XCTAssertEqual(app.staticTexts["my_text"].label, "fakeAction")
+        XCTAssertEqual(app.staticTexts["timer_value"].label, "fakeAction")
     }
 }

@@ -24,7 +24,7 @@ class ViewModelTests: XCTestCase {
             i += 1
             switch i {
             case 1:
-                XCTAssertEqual(value, "")
+                XCTAssertEqual(value, "Stopped")
                 self.fakeModel.valuesSubject.send("test")
             case 2:
                 XCTAssertEqual(value, "test")
