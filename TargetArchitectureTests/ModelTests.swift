@@ -97,4 +97,30 @@ class ModelTests: XCTestCase {
             sub.cancel()
         }
     }
+    
+    func testReceivingAClockErrorSetCounterToZero() {
+        let expectation = self.expectation(description: "wait for counter")
+        
+        var i = 0
+        let sub = model.counter.sink { value in
+            i += 1
+            switch i {
+            case 1:
+                XCTAssertEqual(value, 0)
+                self.fakeService.clockSubject.send(Date())
+            case 2:
+                XCTAssertEqual(value, 1)
+                self.fakeService.clockSubject.send(completion: .failure(.invalid))
+            case 3:
+                XCTAssertEqual(value, 0)
+                expectation.fulfill()
+            default:
+                XCTFail()
+            }
+        }
+        
+        waitForExpectations(timeout: 5.0) { _ in
+            sub.cancel()
+        }
+    }
 }

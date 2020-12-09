@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         case "scenario2":
             contentView = AnyView(ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: 456, isCounterStarted: false)))
         default:
-            fatalError("no scenario defined")
+            return
         }
         #else
         let contentView = ContentView<ViewModel>().environmentObject(ViewModel())
