@@ -10,12 +10,12 @@ struct ContentView<Model: ViewModelProtocol>: View {
     
     var body: some View {
         VStack(spacing: 8) {
-            Toggle(isOn: $model.isTimerStarted) {
+            Toggle(isOn: $model.isCounterStarted) {
                 Text("Start timer")
             }
-            Text(model.value).accessibility(identifier: "timer_value")
-            Button(action: model.myAction) {
-                Text("Button")
+            Text("Value: \(model.value)").accessibility(identifier: "counter_value")
+            Button(action: model.reset) {
+                Text("Reset")
             }
         }
         .padding(8)
@@ -25,10 +25,10 @@ struct ContentView<Model: ViewModelProtocol>: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake", isTimerStarted: true))
-                .previewDisplayName("ON")
-            ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: "fake2", isTimerStarted: false))
-                .previewDisplayName("OFF")
+            ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: 123, isCounterStarted: true))
+                .previewDisplayName("ON 123")
+            ContentView<FakeViewModel>().environmentObject(FakeViewModel(value: 456, isCounterStarted: false))
+                .previewDisplayName("OFF 456")
         }
     }
 }

@@ -7,15 +7,15 @@ import Combine
 
 class FakeViewModel: ViewModelProtocol {
     
-    @Published var value: String
-    @Published var isTimerStarted: Bool
+    @Published var value: Int
+    @Published var isCounterStarted: Bool
     
-    init(value: String, isTimerStarted: Bool) {
+    init(value: Int, isCounterStarted: Bool) {
         self.value = value
-        self.isTimerStarted = isTimerStarted
+        self.isCounterStarted = isCounterStarted
     }
     
-    func myAction() {
-        self.value = "fakeAction"
+    func reset() {
+        self.value = -1
     }
 }
