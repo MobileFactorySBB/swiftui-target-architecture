@@ -23,7 +23,7 @@ class Model: ModelProtocol {
     private let service: ServiceProtocol
     private var counterValue = CurrentValueSubject<Int, Never>(0)
     private var clockSubscription: Cancellable!
-        
+    
     init(service: ServiceProtocol = Service()) {
         self.service = service
         clockSubscription = service.clock.sink { completion in
