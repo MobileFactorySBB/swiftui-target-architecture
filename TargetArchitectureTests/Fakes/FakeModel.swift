@@ -11,6 +11,6 @@ class FakeModel: ModelProtocol {
     var values: AnyPublisher<String, Never> {
         return valuesSubject.eraseToAnyPublisher()
     }
-    let valuesSubject = PassthroughSubject<String, Never>()
     
+    let valuesSubject = PassthroughSubject<String, Never>()
 }

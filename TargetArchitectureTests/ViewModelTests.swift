@@ -10,12 +10,12 @@ class ViewModelTests: XCTestCase {
     
     private var viewModel: ViewModel!
     private var fakeModel: FakeModel!
-
+    
     override func setUp() {
         fakeModel = FakeModel()
         viewModel = ViewModel(model: fakeModel)
     }
-
+    
     func testViewModel() {
         let expectation = self.expectation(description: "wait...")
         

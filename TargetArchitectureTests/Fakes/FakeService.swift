@@ -11,5 +11,6 @@ class FakeService: ServiceProtocol {
     var values: AnyPublisher<Date, Never> {
         return valuesSubject.eraseToAnyPublisher()
     }
+    
     let valuesSubject = PassthroughSubject<Date, Never>()
 }

@@ -10,7 +10,7 @@ class ModelTests: XCTestCase {
     
     private var model: Model!
     private var fakeService: FakeService!
-
+    
     override func setUp() {
         fakeService = FakeService()
         model = Model(service: fakeService)

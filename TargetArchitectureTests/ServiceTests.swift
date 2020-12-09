@@ -9,11 +9,11 @@ import Combine
 class ServiceTests: XCTestCase {
     
     private var service: Service!
-
+    
     override func setUp() {
         service = Service()
     }
-
+    
     func testService() {
         let expectation = self.expectation(description: "wait...")
         
