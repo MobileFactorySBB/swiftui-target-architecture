@@ -6,8 +6,8 @@ import Foundation
 
 protocol ViewModelProtocol: ObservableObject {
     
-    var value: String { get set }
-    var showValue: Bool { get set }
+    var value: Int { get set }
+    var isCounterStarted: Bool { get set }
     
-    func myAction()
+    func reset()
 }

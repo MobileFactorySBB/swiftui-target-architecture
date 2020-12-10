@@ -8,8 +8,18 @@ import Combine
 
 class FakeService: ServiceProtocol {
     
-    var values: AnyPublisher<Date, Never> {
-        return valuesSubject.eraseToAnyPublisher()
+    let clockSubject = PassthroughSubject<Date, ServiceError>()
+    var clock: AnyPublisher<Date, ServiceError> {
+        return clockSubject.eraseToAnyPublisher()
     }
-    let valuesSubject = PassthroughSubject<Date, Never>()
+    
+    var clockWasStarted = false
+    func startClock() {
+        clockWasStarted = true
+    }
+    
+    var clockWasStopped = false
+    func stopClock() {
+        clockWasStopped = true
+    }
 }

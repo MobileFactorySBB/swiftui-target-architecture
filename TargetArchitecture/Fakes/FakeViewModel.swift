@@ -7,44 +7,15 @@ import Combine
 
 class FakeViewModel: ViewModelProtocol {
     
-    // synthetize version
-//    @Published var value: String
-//    @Published var boolValue: Bool
+    @Published var value: Int
+    @Published var isCounterStarted: Bool
     
-    // manual version
-    private var _value: String
-    private var _showValue: Bool
-    
-    let objectWillChange = ObservableObjectPublisher()
-    
-    var value: String {
-        get {
-            return _value
-        }
-        set {
-            objectWillChange.send()
-            _value = newValue
-        }
-    }
-    
-    var showValue: Bool {
-        get {
-            return _showValue
-        }
-        set {
-            objectWillChange.send()
-            _showValue = newValue
-        }
-    }
-    
-    init(value: String, showValue: Bool) {
-        _value = value
-        _showValue = showValue
+    init(value: Int, isCounterStarted: Bool) {
         self.value = value
-        self.showValue = showValue
+        self.isCounterStarted = isCounterStarted
     }
     
-    func myAction() {
-        self.value = "fakeAction"
+    func reset() {
+        self.value = -1
     }
 }

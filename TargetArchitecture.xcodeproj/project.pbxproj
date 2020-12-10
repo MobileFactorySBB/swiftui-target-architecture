@@ -26,6 +26,7 @@
 		A7DC23BB2510801D0012EA25 /* FakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BA2510801D0012EA25 /* FakeViewModel.swift */; };
 		A7DC23BD251082A40012EA25 /* FakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BC251082A40012EA25 /* FakeModel.swift */; };
 		A7DC23BF2510832A0012EA25 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BE2510832A0012EA25 /* ViewModelTests.swift */; };
+		A7DEB8582580D43A000A94EA /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DEB8572580D43A000A94EA /* ServiceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		A7DC23BA2510801D0012EA25 /* FakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeViewModel.swift; sourceTree = "<group>"; };
 		A7DC23BC251082A40012EA25 /* FakeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeModel.swift; sourceTree = "<group>"; };
 		A7DC23BE2510832A0012EA25 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
+		A7DEB8572580D43A000A94EA /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 			children = (
 				A7DC23A6250FA7CC0012EA25 /* Service.swift */,
 				A7DC23A8250FA7D70012EA25 /* ServiceProtocol.swift */,
+				A7DEB8572580D43A000A94EA /* ServiceError.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -280,7 +283,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Schweizerische Bundesbahnen SBB";
 				TargetAttributes = {
 					A7DC236E250FA7000012EA25 = {
@@ -355,6 +358,7 @@
 				A7DC23A7250FA7CC0012EA25 /* Service.swift in Sources */,
 				A7DC2375250FA7000012EA25 /* SceneDelegate.swift in Sources */,
 				A7DC2377250FA7000012EA25 /* ContentView.swift in Sources */,
+				A7DEB8582580D43A000A94EA /* ServiceError.swift in Sources */,
 				A7DC23AF250FB82C0012EA25 /* ModelProtocol.swift in Sources */,
 				A7DC23B6250FC1070012EA25 /* ViewModel.swift in Sources */,
 				A7DC23A9250FA7D70012EA25 /* ServiceProtocol.swift in Sources */,
@@ -434,6 +438,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -458,7 +463,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -494,6 +499,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -512,7 +518,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -538,7 +544,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.TargetArchitecture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -558,7 +564,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.TargetArchitecture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -646,7 +652,7 @@
 			};
 			name = Release;
 		};
-		A7DC23C02510B1AD0012EA25 /* DebugUITests */ = {
+		A7DC23C02510B1AD0012EA25 /* Tests */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -672,6 +678,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -696,7 +703,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -704,9 +711,9 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG UITESTS";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = DebugUITests;
+			name = Tests;
 		};
-		A7DC23C12510B1AD0012EA25 /* DebugUITests */ = {
+		A7DC23C12510B1AD0012EA25 /* Tests */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -722,11 +729,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.TargetArchitecture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = DebugUITests;
+			name = Tests;
 		};
-		A7DC23C22510B1AD0012EA25 /* DebugUITests */ = {
+		A7DC23C22510B1AD0012EA25 /* Tests */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -746,9 +753,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TargetArchitecture.app/TargetArchitecture";
 			};
-			name = DebugUITests;
+			name = Tests;
 		};
-		A7DC23C32510B1AD0012EA25 /* DebugUITests */ = {
+		A7DC23C32510B1AD0012EA25 /* Tests */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -766,7 +773,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TargetArchitecture;
 			};
-			name = DebugUITests;
+			name = Tests;
 		};
 /* End XCBuildConfiguration section */
 
@@ -775,7 +782,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7DC2397250FA7020012EA25 /* Debug */,
-				A7DC23C02510B1AD0012EA25 /* DebugUITests */,
+				A7DC23C02510B1AD0012EA25 /* Tests */,
 				A7DC2398250FA7020012EA25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -785,7 +792,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7DC239A250FA7020012EA25 /* Debug */,
-				A7DC23C12510B1AD0012EA25 /* DebugUITests */,
+				A7DC23C12510B1AD0012EA25 /* Tests */,
 				A7DC239B250FA7020012EA25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -795,7 +802,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7DC239D250FA7020012EA25 /* Debug */,
-				A7DC23C22510B1AD0012EA25 /* DebugUITests */,
+				A7DC23C22510B1AD0012EA25 /* Tests */,
 				A7DC239E250FA7020012EA25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -805,7 +812,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7DC23A0250FA7020012EA25 /* Debug */,
-				A7DC23C32510B1AD0012EA25 /* DebugUITests */,
+				A7DC23C32510B1AD0012EA25 /* Tests */,
 				A7DC23A1250FA7020012EA25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

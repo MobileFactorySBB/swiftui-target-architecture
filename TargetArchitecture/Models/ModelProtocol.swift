@@ -7,5 +7,8 @@ import Combine
 
 protocol ModelProtocol {
     
-    var values: AnyPublisher<String, Never> { get }
+    var counter: AnyPublisher<Int, Never> { get }
+    var isCounterStarted: Bool { get set }
+    
+    func resetCounter()
 }

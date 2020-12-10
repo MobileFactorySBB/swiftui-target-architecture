@@ -7,16 +7,20 @@ import Combine
 
 class ViewModel: ViewModelProtocol {
     
-    @Published var value: String = ""
-    @Published var showValue: Bool = true
+    @Published var value: Int = 0
+    @Published var isCounterStarted: Bool = false
     
-    private var sub: Cancellable!
+    private var model: ModelProtocol
+    private var counterValueSubscription: Cancellable!
+    private var counterStartedSubscription: Cancellable!
     
     init(model: ModelProtocol = Model()) {
-        sub = model.values.receive(on: RunLoop.main).assign(to: \.value, on: self)
+        self.model = model
+        counterValueSubscription = model.counter.receive(on: RunLoop.main).assign(to: \.value, on: self)
+        counterStartedSubscription = $isCounterStarted.sink(receiveValue: { self.model.isCounterStarted = $0 })
     }
     
-    func myAction() {
-        print("action")
+    func reset() {
+        model.resetCounter()
     }
 }

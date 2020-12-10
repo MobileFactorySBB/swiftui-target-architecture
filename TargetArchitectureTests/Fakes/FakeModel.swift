@@ -8,9 +8,19 @@ import Combine
 
 class FakeModel: ModelProtocol {
     
-    var values: AnyPublisher<String, Never> {
-        return valuesSubject.eraseToAnyPublisher()
+    let counterSubject = PassthroughSubject<Int, Never>()
+    var counter: AnyPublisher<Int, Never> {
+        counterSubject.eraseToAnyPublisher()
     }
-    let valuesSubject = PassthroughSubject<String, Never>()
     
+    var isCounterStarted: Bool
+    var resetWasCalled = false
+    
+    init(isCounterStarted: Bool) {
+        self.isCounterStarted = isCounterStarted
+    }
+    
+    func resetCounter() {
+        resetWasCalled = true
+    }
 }
