@@ -6,10 +6,10 @@ import Foundation
 import Combine
 @testable import TargetArchitecture
 
-class FakeService: ServiceProtocol {
+class FakeClock: ClockProtocol {
     
-    let clockSubject = PassthroughSubject<Date, ServiceError>()
-    var clock: AnyPublisher<Date, ServiceError> {
+    let clockSubject = PassthroughSubject<Date, ClockError>()
+    var clock: AnyPublisher<Date, ClockError> {
         return clockSubject.eraseToAnyPublisher()
     }
     

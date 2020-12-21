@@ -6,25 +6,25 @@ import XCTest
 import Combine
 @testable import TargetArchitecture
 
-class ModelTests: XCTestCase {
+class CounterTests: XCTestCase {
     
-    private var model: Model!
-    private var fakeService: FakeService!
+    private var counter: Counter!
+    private var fakeClock: FakeClock!
     
     override func setUp() {
-        fakeService = FakeService()
-        model = Model(service: fakeService)
+        fakeClock = FakeClock()
+        counter = Counter(service: fakeClock)
     }
     
     func testCounterIsInitiallyStopped() {
-        XCTAssertFalse(model.isCounterStarted)
+        XCTAssertFalse(counter.isCounterStarted)
     }
     
     func testCounterIsInitiallySetToZero() {
         let expectation = self.expectation(description: "wait for counter")
         
         var i = 0
-        let sub = model.counter.sink { value in
+        let sub = counter.counter.sink { value in
             i += 1
             switch i {
             case 1:
@@ -41,21 +41,21 @@ class ModelTests: XCTestCase {
     }
     
     func testStartingCounterStartsClockService() {
-        model.isCounterStarted = true
+        counter.isCounterStarted = true
         
-        XCTAssertTrue(fakeService.clockWasStarted)
+        XCTAssertTrue(fakeClock.clockWasStarted)
     }
     
     func testReceivingAClockEventIncrementsCounter() {
         let expectation = self.expectation(description: "wait for counter")
         
         var i = 0
-        let sub = model.counter.sink { value in
+        let sub = counter.counter.sink { value in
             i += 1
             switch i {
             case 1:
                 XCTAssertEqual(value, 0)
-                self.fakeService.clockSubject.send(Date())
+                self.fakeClock.clockSubject.send(Date())
             case 2:
                 XCTAssertEqual(value, 1)
                 expectation.fulfill()
@@ -70,21 +70,21 @@ class ModelTests: XCTestCase {
     }
     
     func testStoppingCounterStopsClockService() {
-        model.isCounterStarted = false
+        counter.isCounterStarted = false
         
-        XCTAssertTrue(fakeService.clockWasStopped)
+        XCTAssertTrue(fakeClock.clockWasStopped)
     }
     
     func testResetingCounterSetValueToZero() {
         let expectation = self.expectation(description: "wait for counter")
         
         var i = 0
-        let sub = model.counter.sink { value in
+        let sub = counter.counter.sink { value in
             i += 1
             switch i {
             case 1:
                 XCTAssertEqual(value, 0)
-                self.model.resetCounter()
+                self.counter.resetCounter()
             case 2:
                 XCTAssertEqual(value, 0)
                 expectation.fulfill()
@@ -102,15 +102,15 @@ class ModelTests: XCTestCase {
         let expectation = self.expectation(description: "wait for counter")
         
         var i = 0
-        let sub = model.counter.sink { value in
+        let sub = counter.counter.sink { value in
             i += 1
             switch i {
             case 1:
                 XCTAssertEqual(value, 0)
-                self.fakeService.clockSubject.send(Date())
+                self.fakeClock.clockSubject.send(Date())
             case 2:
                 XCTAssertEqual(value, 1)
-                self.fakeService.clockSubject.send(completion: .failure(.invalid))
+                self.fakeClock.clockSubject.send(completion: .failure(.invalid))
             case 3:
                 XCTAssertEqual(value, 0)
                 expectation.fulfill()

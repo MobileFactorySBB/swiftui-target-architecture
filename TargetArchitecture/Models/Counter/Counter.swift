@@ -5,7 +5,7 @@
 import Foundation
 import Combine
 
-class Model: ModelProtocol {
+class Counter: CounterProtocol {
     
     var counter: AnyPublisher<Int, Never> {
         counterValue.eraseToAnyPublisher()
@@ -20,11 +20,11 @@ class Model: ModelProtocol {
         }
     }
     
-    private let service: ServiceProtocol
+    private let service: ClockProtocol
     private var counterValue = CurrentValueSubject<Int, Never>(0)
     private var clockSubscription: Cancellable!
     
-    init(service: ServiceProtocol = Service()) {
+    init(service: ClockProtocol = Clock()) {
         self.service = service
         clockSubscription = service.clock.sink { completion in
             print("Clock completion: \(completion)")

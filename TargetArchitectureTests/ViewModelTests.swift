@@ -9,11 +9,11 @@ import Combine
 class ViewModelTests: XCTestCase {
     
     private var viewModel: ViewModel!
-    private var fakeModel: FakeModel!
+    private var fakeCounter: FakeCounter!
     
     override func setUp() {
-        fakeModel = FakeModel(isCounterStarted: false)
-        viewModel = ViewModel(model: fakeModel)
+        fakeCounter = FakeCounter(isCounterStarted: false)
+        viewModel = ViewModel(model: fakeCounter)
     }
     
     func testViewModelInit() {
@@ -21,7 +21,7 @@ class ViewModelTests: XCTestCase {
         XCTAssertFalse(viewModel.isCounterStarted)
     }
     
-    func testModelCounterUpdatesValue() {
+    func testCounterModelUpdatesValue() {
         let expectation = self.expectation(description: "wait for value update")
         
         var i = 0
@@ -30,7 +30,7 @@ class ViewModelTests: XCTestCase {
             switch i {
             case 1:
                 XCTAssertEqual(value, 0)
-                self.fakeModel.counterSubject.send(5)
+                self.fakeCounter.counterSubject.send(5)
             case 2:
                 XCTAssertEqual(value, 5)
                 expectation.fulfill()
@@ -44,18 +44,18 @@ class ViewModelTests: XCTestCase {
         }
     }
     
-    func testIsCounterStartedForwardsToModel() {
+    func testIsCounterStartedForwardsToCounterModel() {
         viewModel.isCounterStarted = true
         
-        XCTAssertTrue(fakeModel.isCounterStarted)
+        XCTAssertTrue(fakeCounter.isCounterStarted)
         viewModel.isCounterStarted = false
         
-        XCTAssertFalse(fakeModel.isCounterStarted)
+        XCTAssertFalse(fakeCounter.isCounterStarted)
     }
     
-    func testResetForwardsToModel() {
+    func testResetForwardsToCounterModel() {
         viewModel.reset()
         
-        XCTAssertTrue(fakeModel.resetWasCalled)
+        XCTAssertTrue(fakeCounter.resetWasCalled)
     }
 }

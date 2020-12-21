@@ -5,7 +5,7 @@
 import Foundation
 import Combine
 
-protocol ModelProtocol {
+protocol CounterProtocol {
     
     var counter: AnyPublisher<Int, Never> { get }
     var isCounterStarted: Bool { get set }

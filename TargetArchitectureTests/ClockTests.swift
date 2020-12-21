@@ -6,18 +6,18 @@ import XCTest
 import Combine
 @testable import TargetArchitecture
 
-class ServiceTests: XCTestCase {
+class ClockTests: XCTestCase {
     
-    private var service: Service!
+    private var clock: Clock!
     
     override func setUp() {
-        service = Service()
+        clock = Clock()
     }
     
-    func testServiceDoesNothingAfterInit() {
+    func testClockDoesNothingAfterInit() {
         let expectation = self.expectation(description: "wait for service timer")
         
-        let sub = service.clock.sink(receiveCompletion: { _ in
+        let sub = clock.clock.sink(receiveCompletion: { _ in
             XCTFail()
         }, receiveValue: { value in
             XCTFail()
@@ -31,12 +31,12 @@ class ServiceTests: XCTestCase {
         }
     }
     
-    func testServiceSendEverySecondsWhenStarted() {
+    func testClockSendEverySecondsWhenStarted() {
         let expectation = self.expectation(description: "wait for service timer")
         
         var i = 0
         let start = Date()
-        let sub = service.clock.sink(receiveCompletion: { _ in
+        let sub = clock.clock.sink(receiveCompletion: { _ in
             XCTFail()
         }, receiveValue: { value in
             i += 1
@@ -52,31 +52,31 @@ class ServiceTests: XCTestCase {
                 XCTFail()
             }
         })
-        service.startClock()
+        clock.startClock()
         
         waitForExpectations(timeout: 5.0) { _ in
             sub.cancel()
         }
     }
     
-    func testServiceStopsSendingWhenStopped() {
+    func testClockStopsSendingWhenStopped() {
         let expectation = self.expectation(description: "wait for service timer")
         
         var i = 0
         let start = Date()
-        let sub = service.clock.sink(receiveCompletion: { _ in
+        let sub = clock.clock.sink(receiveCompletion: { _ in
             XCTFail()
         }, receiveValue: { value in
             i += 1
             switch i {
             case 1:
                 XCTAssertEqual(start.timeIntervalSinceNow, -1.0, accuracy: 0.5)
-                self.service.stopClock()
+                self.clock.stopClock()
             default:
                 XCTFail()
             }
         })
-        service.startClock()
+        clock.startClock()
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             expectation.fulfill()
         }

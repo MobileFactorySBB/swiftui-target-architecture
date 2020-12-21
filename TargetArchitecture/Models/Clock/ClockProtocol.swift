@@ -5,9 +5,9 @@
 import Foundation
 import Combine
 
-protocol ServiceProtocol {
+protocol ClockProtocol {
     
-    var clock: AnyPublisher<Date, ServiceError> { get }
+    var clock: AnyPublisher<Date, ClockError> { get }
     
     func startClock()
     func stopClock()

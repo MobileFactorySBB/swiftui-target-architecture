@@ -4,7 +4,7 @@
 
 import Foundation
 
-enum ServiceError: Error {
+enum ClockError: Error {
     
     case invalid
 }

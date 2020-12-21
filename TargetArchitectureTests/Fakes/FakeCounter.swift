@@ -6,7 +6,7 @@ import Foundation
 import Combine
 @testable import TargetArchitecture
 
-class FakeModel: ModelProtocol {
+class FakeCounter: CounterProtocol {
     
     let counterSubject = PassthroughSubject<Int, Never>()
     var counter: AnyPublisher<Int, Never> {

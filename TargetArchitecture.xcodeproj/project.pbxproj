@@ -14,19 +14,19 @@
 		A7DC237C250FA7020012EA25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7DC237B250FA7020012EA25 /* Preview Assets.xcassets */; };
 		A7DC237F250FA7020012EA25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7DC237D250FA7020012EA25 /* LaunchScreen.storyboard */; };
 		A7DC2395250FA7020012EA25 /* PocViewModelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC2394250FA7020012EA25 /* PocViewModelUITests.swift */; };
-		A7DC23A7250FA7CC0012EA25 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23A6250FA7CC0012EA25 /* Service.swift */; };
-		A7DC23A9250FA7D70012EA25 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23A8250FA7D70012EA25 /* ServiceProtocol.swift */; };
-		A7DC23AB250FA8CC0012EA25 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23AA250FA8CC0012EA25 /* ServiceTests.swift */; };
-		A7DC23AD250FB81E0012EA25 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23AC250FB81E0012EA25 /* Model.swift */; };
-		A7DC23AF250FB82C0012EA25 /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23AE250FB82C0012EA25 /* ModelProtocol.swift */; };
-		A7DC23B1250FB9C60012EA25 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B0250FB9C60012EA25 /* ModelTests.swift */; };
-		A7DC23B4250FBA440012EA25 /* FakeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B3250FBA440012EA25 /* FakeService.swift */; };
+		A7DC23A7250FA7CC0012EA25 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23A6250FA7CC0012EA25 /* Clock.swift */; };
+		A7DC23A9250FA7D70012EA25 /* ClockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23A8250FA7D70012EA25 /* ClockProtocol.swift */; };
+		A7DC23AB250FA8CC0012EA25 /* ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23AA250FA8CC0012EA25 /* ClockTests.swift */; };
+		A7DC23AD250FB81E0012EA25 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23AC250FB81E0012EA25 /* Counter.swift */; };
+		A7DC23AF250FB82C0012EA25 /* CounterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23AE250FB82C0012EA25 /* CounterProtocol.swift */; };
+		A7DC23B1250FB9C60012EA25 /* CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B0250FB9C60012EA25 /* CounterTests.swift */; };
+		A7DC23B4250FBA440012EA25 /* FakeClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B3250FBA440012EA25 /* FakeClock.swift */; };
 		A7DC23B6250FC1070012EA25 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B5250FC1070012EA25 /* ViewModel.swift */; };
 		A7DC23B8250FC4F40012EA25 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23B7250FC4F40012EA25 /* ViewModelProtocol.swift */; };
 		A7DC23BB2510801D0012EA25 /* FakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BA2510801D0012EA25 /* FakeViewModel.swift */; };
-		A7DC23BD251082A40012EA25 /* FakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BC251082A40012EA25 /* FakeModel.swift */; };
+		A7DC23BD251082A40012EA25 /* FakeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BC251082A40012EA25 /* FakeCounter.swift */; };
 		A7DC23BF2510832A0012EA25 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DC23BE2510832A0012EA25 /* ViewModelTests.swift */; };
-		A7DEB8582580D43A000A94EA /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DEB8572580D43A000A94EA /* ServiceError.swift */; };
+		A7DEB8582580D43A000A94EA /* ClockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DEB8572580D43A000A94EA /* ClockError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,19 +60,19 @@
 		A7DC2390250FA7020012EA25 /* TargetArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TargetArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7DC2394250FA7020012EA25 /* PocViewModelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocViewModelUITests.swift; sourceTree = "<group>"; };
 		A7DC2396250FA7020012EA25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7DC23A6250FA7CC0012EA25 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		A7DC23A8250FA7D70012EA25 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
-		A7DC23AA250FA8CC0012EA25 /* ServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
-		A7DC23AC250FB81E0012EA25 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		A7DC23AE250FB82C0012EA25 /* ModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
-		A7DC23B0250FB9C60012EA25 /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
-		A7DC23B3250FBA440012EA25 /* FakeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeService.swift; sourceTree = "<group>"; };
+		A7DC23A6250FA7CC0012EA25 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		A7DC23A8250FA7D70012EA25 /* ClockProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockProtocol.swift; sourceTree = "<group>"; };
+		A7DC23AA250FA8CC0012EA25 /* ClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTests.swift; sourceTree = "<group>"; };
+		A7DC23AC250FB81E0012EA25 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		A7DC23AE250FB82C0012EA25 /* CounterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterProtocol.swift; sourceTree = "<group>"; };
+		A7DC23B0250FB9C60012EA25 /* CounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterTests.swift; sourceTree = "<group>"; };
+		A7DC23B3250FBA440012EA25 /* FakeClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeClock.swift; sourceTree = "<group>"; };
 		A7DC23B5250FC1070012EA25 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		A7DC23B7250FC4F40012EA25 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		A7DC23BA2510801D0012EA25 /* FakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeViewModel.swift; sourceTree = "<group>"; };
-		A7DC23BC251082A40012EA25 /* FakeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeModel.swift; sourceTree = "<group>"; };
+		A7DC23BC251082A40012EA25 /* FakeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCounter.swift; sourceTree = "<group>"; };
 		A7DC23BE2510832A0012EA25 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
-		A7DEB8572580D43A000A94EA /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		A7DEB8572580D43A000A94EA /* ClockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +100,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7A0FD3B2590D40300647954 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				A7DC23A6250FA7CC0012EA25 /* Clock.swift */,
+				A7DEB8572580D43A000A94EA /* ClockError.swift */,
+				A7DC23A8250FA7D70012EA25 /* ClockProtocol.swift */,
+			);
+			path = Clock;
+			sourceTree = "<group>";
+		};
+		A7A0FD3C2590D40C00647954 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				A7DC23AC250FB81E0012EA25 /* Counter.swift */,
+				A7DC23AE250FB82C0012EA25 /* CounterProtocol.swift */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
 		A7DC2366250FA7000012EA25 = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +147,6 @@
 				A7DC23A2250FA73F0012EA25 /* Views */,
 				A7DC23A3250FA74B0012EA25 /* ViewModels */,
 				A7DC23A4250FA7530012EA25 /* Models */,
-				A7DC23A5250FA75F0012EA25 /* Services */,
 				A7DC23B9251080070012EA25 /* Fakes */,
 				A7DC2378250FA7020012EA25 /* Assets.xcassets */,
 				A7DC237D250FA7020012EA25 /* LaunchScreen.storyboard */,
@@ -150,8 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				A7DC238B250FA7020012EA25 /* Info.plist */,
-				A7DC23AA250FA8CC0012EA25 /* ServiceTests.swift */,
-				A7DC23B0250FB9C60012EA25 /* ModelTests.swift */,
+				A7DC23AA250FA8CC0012EA25 /* ClockTests.swift */,
+				A7DC23B0250FB9C60012EA25 /* CounterTests.swift */,
 				A7DC23BE2510832A0012EA25 /* ViewModelTests.swift */,
 				A7DC23B2250FBA330012EA25 /* Fakes */,
 			);
@@ -187,27 +205,17 @@
 		A7DC23A4250FA7530012EA25 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A7DC23AC250FB81E0012EA25 /* Model.swift */,
-				A7DC23AE250FB82C0012EA25 /* ModelProtocol.swift */,
+				A7A0FD3B2590D40300647954 /* Clock */,
+				A7A0FD3C2590D40C00647954 /* Counter */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		A7DC23A5250FA75F0012EA25 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				A7DC23A6250FA7CC0012EA25 /* Service.swift */,
-				A7DC23A8250FA7D70012EA25 /* ServiceProtocol.swift */,
-				A7DEB8572580D43A000A94EA /* ServiceError.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		A7DC23B2250FBA330012EA25 /* Fakes */ = {
 			isa = PBXGroup;
 			children = (
-				A7DC23B3250FBA440012EA25 /* FakeService.swift */,
-				A7DC23BC251082A40012EA25 /* FakeModel.swift */,
+				A7DC23B3250FBA440012EA25 /* FakeClock.swift */,
+				A7DC23BC251082A40012EA25 /* FakeCounter.swift */,
 			);
 			path = Fakes;
 			sourceTree = "<group>";
@@ -353,15 +361,15 @@
 			files = (
 				A7DC2373250FA7000012EA25 /* AppDelegate.swift in Sources */,
 				A7DC23BB2510801D0012EA25 /* FakeViewModel.swift in Sources */,
-				A7DC23AD250FB81E0012EA25 /* Model.swift in Sources */,
+				A7DC23AD250FB81E0012EA25 /* Counter.swift in Sources */,
 				A7DC23B8250FC4F40012EA25 /* ViewModelProtocol.swift in Sources */,
-				A7DC23A7250FA7CC0012EA25 /* Service.swift in Sources */,
+				A7DC23A7250FA7CC0012EA25 /* Clock.swift in Sources */,
 				A7DC2375250FA7000012EA25 /* SceneDelegate.swift in Sources */,
 				A7DC2377250FA7000012EA25 /* ContentView.swift in Sources */,
-				A7DEB8582580D43A000A94EA /* ServiceError.swift in Sources */,
-				A7DC23AF250FB82C0012EA25 /* ModelProtocol.swift in Sources */,
+				A7DEB8582580D43A000A94EA /* ClockError.swift in Sources */,
+				A7DC23AF250FB82C0012EA25 /* CounterProtocol.swift in Sources */,
 				A7DC23B6250FC1070012EA25 /* ViewModel.swift in Sources */,
-				A7DC23A9250FA7D70012EA25 /* ServiceProtocol.swift in Sources */,
+				A7DC23A9250FA7D70012EA25 /* ClockProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,11 +377,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7DC23AB250FA8CC0012EA25 /* ServiceTests.swift in Sources */,
-				A7DC23B1250FB9C60012EA25 /* ModelTests.swift in Sources */,
-				A7DC23BD251082A40012EA25 /* FakeModel.swift in Sources */,
+				A7DC23AB250FA8CC0012EA25 /* ClockTests.swift in Sources */,
+				A7DC23B1250FB9C60012EA25 /* CounterTests.swift in Sources */,
+				A7DC23BD251082A40012EA25 /* FakeCounter.swift in Sources */,
 				A7DC23BF2510832A0012EA25 /* ViewModelTests.swift in Sources */,
-				A7DC23B4250FBA440012EA25 /* FakeService.swift in Sources */,
+				A7DC23B4250FBA440012EA25 /* FakeClock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
