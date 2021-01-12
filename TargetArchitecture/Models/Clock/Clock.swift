@@ -14,7 +14,7 @@ class Clock: ClockProtocol {
     private var timerSubscription: Cancellable?
     
     func startClock() {
-        timerSubscription = Timer.publish(every: 1.0, on: .main, in: .default)
+        timerSubscription = Timer.publish(every: 1.0, on: .main, in: .common)
             .autoconnect()
             .setFailureType(to: ClockError.self)
             .multicast(subject: clockMulticaster)
