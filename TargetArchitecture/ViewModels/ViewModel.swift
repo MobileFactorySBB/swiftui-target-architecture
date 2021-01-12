@@ -16,7 +16,7 @@ class ViewModel: ViewModelProtocol {
     
     init(model: CounterProtocol = Counter()) {
         self.model = model
-        counterValueSubscription = model.counter.receive(on: RunLoop.main).assign(to: \.value, on: self)
+        counterValueSubscription = model.counter.receive(on: DispatchQueue.main).assign(to: \.value, on: self)
         counterStartedSubscription = $isCounterStarted.sink(receiveValue: { self.model.isCounterStarted = $0 })
     }
     
